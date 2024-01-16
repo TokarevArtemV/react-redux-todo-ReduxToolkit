@@ -1,8 +1,8 @@
 {
-  "name": "react-redux-todo",
+  "name": "react-redux-todo-ReduxToolkit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TokarevArtemV.github.io/react-redux-todo/",
+  "homepage": "https://TokarevArtemV.github.io/react-redux-todo-ReduxToolkit/",
   "dependencies": {
     "@redux-devtools/extension": "^3.3.0",
     "@testing-library/jest-dom": "^5.16.3",
