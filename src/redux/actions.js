@@ -1,31 +1,14 @@
-export const addTask = text => {
+import { createAction } from '@reduxjs/toolkit';
+
+export const addTask = createAction('tasks/addTask', text => {
   return {
-    type: 'tasks/addTask',
     payload: {
       id: Math.random(),
       text,
       completed: false,
     },
   };
-};
-
-export const deleteTask = taskId => {
-  return {
-    type: 'tasks/deleteTask',
-    payload: taskId,
-  };
-};
-
-export const toggleCompeted = taskId => {
-  return {
-    type: 'tasks/toggleCompeted',
-    payload: taskId,
-  };
-};
-
-export const setStatusFilter = status => {
-  return {
-    type: 'filters/setStatusFilter',
-    payload: status,
-  };
-};
+});
+export const deleteTask = createAction('tasks/deleteTask');
+export const toggleCompleted = createAction('tasks/toggleCompeted');
+export const setStatusFilter = createAction('filters/setStatusFilter');
